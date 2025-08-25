@@ -81,6 +81,10 @@ function App() {
               <Upload size={18} />
               Upload Media
             </button>
+            <button className="disposable-browser-btn">
+              <Globe size={18} />
+              Disposable Browser
+            </button>
             <button 
               className="login-btn"
               onClick={() => setIsLoginModalOpen(true)}
@@ -867,7 +871,7 @@ function App() {
           border: 1px solid rgba(0, 255, 127, 0.3);
         }
 
-        .upload-btn:hover, .login-btn:hover {
+        .upload-btn:hover, .login-btn:hover, .disposable-browser-btn:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
@@ -1269,6 +1273,11 @@ function App() {
         .service-card {
           position: relative;
           background: rgba(0, 0, 0, 0.5);
+          background: linear-gradient(135deg, 
+            rgba(139, 92, 246, 0.08) 0%, 
+            rgba(6, 182, 212, 0.08) 50%, 
+            rgba(16, 185, 129, 0.08) 100%
+          );
           backdrop-filter: blur(20px);
           border: 1px solid rgba(0, 255, 127, 0.2);
           border-radius: 16px;
@@ -1282,7 +1291,11 @@ function App() {
 
         .service-card:hover {
           transform: translateY(-8px);
-          background: rgba(0, 255, 127, 0.05);
+          background: linear-gradient(135deg, 
+            rgba(139, 92, 246, 0.15) 0%, 
+            rgba(6, 182, 212, 0.15) 50%, 
+            rgba(16, 185, 129, 0.15) 100%
+          );
           border-color: rgba(0, 255, 127, 0.4);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
@@ -1925,6 +1938,22 @@ function App() {
           outline: none;
           transition: all 0.3s ease;
           font-size: 0.9rem;
+        }
+
+        .disposable-browser-btn {
+          padding: 12px 24px;
+          border: none;
+          border-radius: 8px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 500;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          transition: all 0.3s ease;
+          font-size: 0.9rem;
+          background: linear-gradient(45deg, #10B981, #059669);
+          color: white;
         }
 
         .auth-form input:focus {
