@@ -1518,34 +1518,13 @@ function App() {
           color: #00FF7F;
           text-shadow: 0 0 20px rgba(0, 255, 127, 0.5);
         }
-
-        .steps-container {
-          display: flex;
-          align-items: center;
+          flex-wrap: wrap;
           justify-content: center;
-          gap: 60px;
+          gap: 32px;
           max-width: 1200px;
           margin: 0 auto;
           flex-wrap: wrap;
         }
-
-        .step {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          max-width: 280px;
-          animation: slideInUp 1s ease;
-          position: relative;
-        }
-
-        .step:nth-child(1) { animation-delay: 0.2s; }
-        .step:nth-child(3) { animation-delay: 0.4s; }
-        .step:nth-child(5) { animation-delay: 0.6s; }
-
-        .step-number {
-          position: relative;
-          width: 80px;
           height: 80px;
           border-radius: 50%;
           background: linear-gradient(45deg, #8B5CF6, #06B6D4);
@@ -1554,8 +1533,7 @@ function App() {
           justify-content: center;
           font-family: 'Orbitron', monospace;
           font-size: 1.6rem;
-          font-weight: 900;
-          color: white;
+          width: 280px;
           margin-bottom: 24px;
           animation: glow 3s infinite;
           border: 2px solid rgba(0, 255, 127, 0.3);
