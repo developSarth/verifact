@@ -294,25 +294,30 @@ function App() {
                 <span className="terminal-line">
                   <span className="prompt-symbol">$</span>
                   <span className="command">cat /var/log/misinformation.log</span>
-                </span>
+
+          <div className="threat-landscape">
+            <div className="threat-info">
+              <h3>The Growing Threat</h3>
+              <div className="threat-points">
+                <div className="threat-point">
+                  <span className="threat-icon">⚠️</span>
+                  <span>Deepfakes are becoming increasingly sophisticated and harder to detect</span>
+                </div>
+                <div className="threat-point">
+                  <span className="threat-icon">🎯</span>
+                  <span>Malicious actors use fake content to spread misinformation</span>
+                </div>
+                <div className="threat-point">
+                  <span className="threat-icon">🔍</span>
+                  <span>Traditional verification methods are no longer sufficient</span>
+                </div>
+                <div className="threat-point">
+                  <span className="threat-icon">🛡️</span>
+                  <span>AI-powered detection is essential for digital security</span>
+                </div>
               </div>
-              <h2 className="section-heading">Why It Matters?</h2>
-              <p className="section-para">
-                False information spreads faster than the truth. Deepfakes and fake news can mislead people, 
-                damage reputations, and even influence important decisions. VeriFact gives you the power to 
-                check what's real; So you can make choices with confidence.
-              </p>
             </div>
-            <div className="stats-grid">
-              <div className="stat-card">
-                <div className="stat-number">73%</div>
-                <div className="stat-label">Faster Fake Spread</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">2.5x</div>
-                <div className="stat-label">More Engagement</div>
-              </div>
-              <div className="stat-card">
+          </div>
                 <div className="stat-number">99.7%</div>
                 <div className="stat-label">Detection Accuracy</div>
               </div>
@@ -1430,53 +1435,63 @@ function App() {
           font-size: 0.9rem;
           color: rgba(255, 255, 255, 0.7);
           display: flex;
-          align-items: center;
-          gap: 8px;
+        .threat-landscape {
+          max-width: 900px;
+          margin: 0 auto;
         }
 
-        .prompt-symbol {
+        .threat-info h3 {
+          font-family: 'Coda', cursive;
+          font-size: 1.8rem;
+          font-weight: 800;
           color: #00FF7F;
-          text-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
-        }
-
-        .command {
-          color: #06B6D4;
-        }
-
-        .section-heading {
-          font-family: 'Orbitron', monospace;
-          font-size: 2.8rem;
-          font-weight: 900;
-          color: white;
-          margin-bottom: 32px;
-        }
-
-        .section-para {
-          font-family: 'Inter', sans-serif;
-          font-size: 1.15rem;
-          line-height: 1.8;
-          color: rgba(255, 255, 255, 0.9);
-          font-weight: 400;
-        }
-
-        .stats-grid {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 24px;
+          text-align: center;
+          margin-bottom: 40px;
           animation: slideInUp 1s ease 0.4s both;
         }
 
-        .stat-card {
-          background: rgba(0, 0, 0, 0.6);
-          backdrop-filter: blur(20px);
-          border: 1px solid rgba(0, 255, 127, 0.2);
-          border-radius: 12px;
-          padding: 24px;
-          text-align: center;
-          transition: all 0.3s ease;
+        .threat-points {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 24px;
         }
 
-        .stat-card:hover {
+        .threat-point {
+          display: flex;
+          align-items: flex-start;
+          gap: 16px;
+          background: rgba(255, 255, 255, 0.04);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          padding: 24px;
+          transition: all 0.3s ease;
+          animation: slideInUp 1s ease;
+        }
+
+        .threat-point:nth-child(1) { animation-delay: 0.6s; }
+        .threat-point:nth-child(2) { animation-delay: 0.8s; }
+        .threat-point:nth-child(3) { animation-delay: 1s; }
+        .threat-point:nth-child(4) { animation-delay: 1.2s; }
+
+        .threat-point:hover {
+          transform: translateY(-3px);
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .threat-icon {
+          font-size: 1.5rem;
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+
+        .threat-point span:last-child {
+          font-family: 'Inter', sans-serif;
+          color: rgba(255, 255, 255, 0.9);
+          line-height: 1.6;
+          font-weight: 400;
+        }
           border-color: rgba(0, 255, 127, 0.5);
           box-shadow: 0 0 20px rgba(0, 255, 127, 0.1);
         }
