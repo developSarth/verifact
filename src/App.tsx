@@ -89,12 +89,12 @@ function App() {
               className="login-btn"
               onClick={() => setIsLoginModalOpen(true)}
             >
-              <Code size={16} />
-              Login
-            </button>
-          </div>
+           <Code size={16} />
+           Login
+        </button>
         </div>
-      </nav>
+        </nav>
+
 
       {/* Rolling Facts Banner */}
       <div className="rolling-facts-container relative z-10 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border-y border-white/10">
