@@ -85,7 +85,7 @@ function App() {
               <Globe size={18} />
               Disposable Browser
             </button>
-            <button 
+              Login
               className="login-btn"
               onClick={() => setIsLoginModalOpen(true)}
             >
