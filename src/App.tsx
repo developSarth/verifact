@@ -94,7 +94,7 @@ function App() {
     <Code size={16} />
     Login
   </button>
-</div>
+</div></nav>          
 
 
 
