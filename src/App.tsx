@@ -75,7 +75,6 @@ function App() {
               </div>
             </div>
           </div>
-        </nav>
          <div className="flex items-center gap-6">
   <button className="upload-btn">
     <Upload size={18} />
@@ -95,7 +94,7 @@ function App() {
     Login
   </button>
 </div>
-
+</nav>
 
 
       {/* Rolling Facts Banner */}
