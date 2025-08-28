@@ -76,25 +76,27 @@ function App() {
             </div>
           </div>
           
-          <div className="flex items-center gap-6">
-            <button className="upload-btn">
-              <Upload size={18} />
-              Upload Media
-            </button>
-            <button className="disposable-browser-btn">
-              <Globe size={18} />
-              Disposable Browser
-            </button>
-              Login
-              className="login-btn"
-              onClick={() => setIsLoginModalOpen(true)}
-            >
-              <Code size={16} />
-              Access Portal
-            </button>
-          </div>
-        </div>
-      </nav>
+        <div className="flex items-center gap-6">
+  <button className="upload-btn">
+    <Upload size={18} />
+    Upload Media
+  </button>
+
+  <button className="disposable-browser-btn">
+    <Globe size={18} />
+    Disposable Browser
+  </button>
+
+  <button 
+    className="login-btn"
+    onClick={() => setIsLoginModalOpen(true)}
+  >
+    <Code size={16} />
+    Access Portal
+  </button>
+</div>
+</div>
+</nav>
 
       {/* Rolling Facts Banner */}
       <div className="rolling-facts-container relative z-10 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border-y border-white/10">
