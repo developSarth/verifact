@@ -489,7 +489,7 @@ function App() {
               className="modal-close"
               onClick={() => setIsLoginModalOpen(false)}
             >
-              ×
+              Login
             </button>
 
             {!isSignup ? (
