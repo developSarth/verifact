@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-      <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Orbitron:wght@400;500;700;900&family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
         /* Global Animations */
@@ -1536,5 +1535,3 @@
           .matrix-rain {
             display: none;
           }
-        }
-      `}</style>
