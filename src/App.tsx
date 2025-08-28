@@ -2028,7 +2028,8 @@ function App() {
           }
 
           .services-track {
-            padding: 0 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
           }
 
           .service-card {
