@@ -90,8 +90,9 @@ function App() {
               onClick={() => setIsLoginModalOpen(true)}
             >
               <Code size={16} />
-              Access Portal
+              Login
             </button>
+          </div>
           </div>
         </div>
       </nav>
